@@ -1,5 +1,5 @@
 # How to use it
-  -Start docker desktop
+  - Start docker desktop
   - Clone the repository in your local machine by typing ```git clone link```
   - cd into the project
   - Run ```docker volume create volume_name``` to create a docker volume in your machine. Change the volume_name in docker_compose.yml file according to your need
@@ -18,9 +18,9 @@ You do not need to change anything here, but if you would like to change the use
  - To stop the services you can press ```ctrl+c```
 
 # Commands
-   -to generate migration from model
- ```docker-compose run fastapi-service /bin/sh -c "alembic revision --autogenerate -m "create my table table""```
-   -to aplly the migration to database
- ```docker-compose run fastapi-service /bin/sh -c "alembic upgrade head"```
-   -to revert last applied migration
- ```docker-compose run fastapi-service /bin/sh -c "alembic downgrade -1"```
+   - To generate migration from model
+ ```docker-compose run fastapi-service /bin/sh -c "alembic revision --autogenerate -m "create my table table""```\n
+   - To aplly the migration to database
+ ```docker-compose run fastapi-service /bin/sh -c "alembic upgrade head"``` \n
+   - To revert last applied migration
+ ```docker-compose run fastapi-service /bin/sh -c "alembic downgrade -1"``` \n
