@@ -19,8 +19,8 @@ You do not need to change anything here, but if you would like to change the use
 
 # Commands
    - To generate migration from model
- ```docker-compose run fastapi-service /bin/sh -c "alembic revision --autogenerate -m "create my table table""```\n
+ ```docker-compose run fastapi-service /bin/sh -c "alembic revision --autogenerate -m "create my table table""```
    - To aplly the migration to database
- ```docker-compose run fastapi-service /bin/sh -c "alembic upgrade head"``` \n
+ ```docker-compose run fastapi-service /bin/sh -c "alembic upgrade head"``` 
    - To revert last applied migration
- ```docker-compose run fastapi-service /bin/sh -c "alembic downgrade -1"``` \n
+ ```docker-compose run fastapi-service /bin/sh -c "alembic downgrade -1"``` 
