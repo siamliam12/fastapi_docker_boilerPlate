@@ -18,9 +18,9 @@ You do not need to change anything here, but if you would like to change the use
  - To stop the services you can press ```ctrl+c```
 
 # Commands
- -to generate migration from model
+   -to generate migration from model
  ```docker-compose run fastapi-service /bin/sh -c "alembic revision --autogenerate -m "create my table table""```
- -to aplly the migration to database
+   -to aplly the migration to database
  ```docker-compose run fastapi-service /bin/sh -c "alembic upgrade head"```
- -to revert last applied migration
+   -to revert last applied migration
  ```docker-compose run fastapi-service /bin/sh -c "alembic downgrade -1"```
